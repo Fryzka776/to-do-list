@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toDo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="date()">
+
+    <form>
+        <button class="newList">New list</button>
+        <div id="date"></div>
+
+        <div id="lists">
+            <h1>To do:</h1>
+            <ul id="toDo">
+            </ul>
+            <h1>Done:</h1>
+            <ul id="done">
+            </ul>
+        </div>
+
+        <div class="add">
+            <input type="text" placeholder="To do:" onfocus="this.placeholder=''" onblur="this.placeholder='To do:'">
+            <button id="buttonAdd">Add</button>
+        </div>
+    </form>
+
+    <script src="js/bootstrap.min.js"></script>  
+    <script src="main.js"></script>
+</body>
+</html>
